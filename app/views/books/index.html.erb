@@ -22,6 +22,7 @@
         <td><%= book.price %></td>
         <td>
           <%= link_to "編輯", edit_book_path(book) %>
+          <%= link_to "刪除", book_path(book), method: "delete", data: { confirm: "確認刪除" } %>
         </td>
       </tr>
     <% end %>
